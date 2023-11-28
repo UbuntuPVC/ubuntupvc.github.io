@@ -50,16 +50,27 @@
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1000,
+        smartSpeed: 500,
         items: 1,
         dots: false,
         loop: true,
-        nav: true,
-        navText : [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
-        ]
+        nav: false,
     });
+
+    $('.smoothscroll').on('click', function (e) {
+	 	
+        e.preventDefault();
+
+      var target = this.hash,
+       $target = $(target);
+
+       $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+     }, 400, 'swing', function () {
+         window.location.hash = target;
+     });
+
+     });
 
     
 })(jQuery);

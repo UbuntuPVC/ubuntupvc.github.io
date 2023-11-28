@@ -1,9 +1,14 @@
 /********** Template CSS **********/
+@import url('https://fonts.cdnfonts.com/css/luminari');
 :root {
-    --primary: #5B8C51;
-    --secondary: #EDDD5E;
-    --light: #F7F7F7;
+    --primary: #df4c4c;
+    --secondary: #f8e02c;
+    --light: #ffffff;
     --dark: #404A3D;
+}
+
+body {
+    font-family: Luminari, fantasy;
 }
 
 .back-to-top {
