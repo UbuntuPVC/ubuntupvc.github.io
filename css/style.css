@@ -1,11 +1,13 @@
 /********** Template CSS **********/
 @import url('https://fonts.cdnfonts.com/css/luminari');
 :root {
-    --primary: #df4c4c;
+    --primary: #dc4141;
     --secondary: #f8e02c;
     --light: #ffffff;
-    --dark: #404A3D;
+    --dark: #ffffff;
 }
+
+
 
 body {
     font-family: Luminari, fantasy;
